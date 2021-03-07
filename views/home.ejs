@@ -1,0 +1,53 @@
+<%- include("partials/header"); %> 
+<!-- Wecome Div -->
+<div class="welcome-div">
+    <div class="container">
+        <h2>Welcome to my personal financal tracker</h2>
+        <div class="purpose">
+            <p>Keep an eye on your growth towards your financial goal. </p>
+            <p>Keep track all your daily spendings or income.</p>  
+        </div>
+    </div>
+</div>
+<!-- Submit and read out account balance a transaction -->
+<div class="container transactions">
+    <!-- subnit a trasaction -->
+    <div class="sub-trans">
+        <form action="/home" method="POST">
+            <div class="row">
+                <h2 class="submit-h2">Submit a transaction:</h2>
+                <br>
+                <div class="col-lg-6">
+                    <label for="cal" class="form-label">Day&nbsp:</label>
+                    <input name="day" type="date" id="cal" class="form-control">
+                    <br>
+                    <label for="amount-spent" class="form-label">Spent&nbsp:&nbsp€ </label>
+                    <input type="text" id="amount-spent" name="amount"
+                    class="form-control" placeholder="Amout..." aria-label="Last name">
+                </div>
+              </div> 
+              <br>
+              <button type="submit" name="button" class="btn btn-lg btn-secondary">Submit transaction</button>
+        </form>
+    </div>
+    <hr class="trn-break">
+      <!-- Request a Balance -->
+      <div>
+          <div class="get-trans">
+            <form class="get-bal" action="/home" method="POST">
+                <div class="row">
+                    <h2 class="submit-h2">Get balance:</h2>
+                    <br>
+                    <code>{
+            
+                            }
+                    </code>
+                  </div> 
+                  <br>
+                  <button type="submit" name="button" class="btn btn-lg btn-secondary">Get Balance</button>
+            </form>
+          </div>
+    </div>
+</div>
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,89 @@
+body{
+    box-sizing: border-box;
+    margin: 0;  
+}
+
+/* Navigation bar area */
+.padded-header{
+    padding: 35px!important;
+    margin-bottom: 0!important;
+}
+.padded-nav{
+    padding-right:50px;
+    margin-bottom: 0;
+}
+.padded-nav a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.padded-nav a:hover{
+    color: lightgray;
+    border-bottom: solid lightgray 1px;
+}
+.comp-name{
+    font-size: 1.7rem;
+}
+
+
+/*********** Home Page ***********/
+/* Welcome div */
+.welcome-div{
+    background-image: url("/Savings.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 0;
+    max-width: auto;
+    max-height: auto;
+    width: auto;
+    height:750px ;
+    color:white;
+}
+
+h2{
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding-top: 40px;
+}
+.purpose{
+    padding-top: 10px;
+    line-height: 1;
+}
+.purpose p{
+    float: left;
+    font-size: 1.9rem;
+    font-weight: lighter;
+}
+/* Transactions area */
+.transactions{
+    padding-top: 50px;
+}
+.trn-break{
+    width: 50%;
+    margin-top: 60px;
+}
+code{
+    color: black;
+}
+
+/*********** About Page ***********/
+.P-story{
+    line-height: 2;
+}
+
+/*********** Support Page ***********/
+.support-message{
+    padding-top: 20px;
+    line-height: 2;
+}
+.socials{
+    padding:10px;
+}
+.socials a{
+    padding: 10px;
+}
+
+/*********** Footer Page ***********/
+.footer-break{
+    margin-top: 60px;
+}
